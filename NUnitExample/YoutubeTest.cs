@@ -17,8 +17,7 @@ namespace NUnitExample
         {
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://courses.ultimateqa.com/");
-            driver.Manage().Window.Maximize();
-            Thread.Sleep(15000);
+            driver.Manage().Window.Maximize();            
             Assert.IsTrue(driver.Url.Contains("courses"));
             driver.Quit();
 
